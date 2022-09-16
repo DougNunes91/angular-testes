@@ -22,7 +22,7 @@ describe(UniqueIdService.name, () => {
   });
 
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
-    should not generate duplicate IDs when called multipl times`, () => {
+    should not generate duplicate IDs when called multiple times`, () => {
     const ids = new Set();
     for (let i = 0; i < 50; i++) {
       ids.add(service.generateUniqueIdWithPrefix('app'));
